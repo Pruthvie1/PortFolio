@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <div class="search-container">
+               <input type="text" id="searchBar" placeholder="Search Projects...">
+           </div>
+        </nav>
+    </header>
+    <section id="hero" style="background-image: url('technical-background.jpg');">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInUp">Welcome to My Portfolio</h1>
+            <p class="animate__animated animate__fadeInUp">Showcasing my projects, skills, and contact information.</p>
+            <a href="#projects" class="btn animate__animated animate__fadeInUp">View My Work</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="row">
+                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic animate__animated animate__pulse">
+                <p>Hello! I'm a passionate web developer with experience in creating dynamic and responsive web applications. I love coding, learning new technologies, and solving problems.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Restaurant Management System</h3>
+                <p>Basic Restaurant Management System for my practice and first year project. Basic Implementation of HTML, CSS, Js Available Modules/Services
+
+Menu
+Maharashtrian Dishes Menu
+LogIn and SignUp
+About us
+Contact us</p>
+                <a href="https://github.com/Pruthvie1/RestaurantWeb" class="btn" target="_blank">Details</a>
+            </div>
+            <div class="project-card">
+                <h3>InstaHostel-Android App</h3>
+                <p>InstaHostel is a one step solution to manage daily hostel management like mess menu, hostel staff details and many more.</p>
+                <a href="https://github.com/Pruthvie1/InstaHostel" class="btn" target="_blank">Details</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+          <div class="container">
+              <h2>Skills</h2>
+              <div class="skills-grid">
+                  <div class="skill-card animate__animated animate__bounceIn">
+                      <i class="fas fa-code"></i>
+                      <h3>HTML</h3>
+                  </div>
+                  <div class="skill-card animate__animated animate__bounceIn" style="animation-delay: 0.2s;">
+                      <i class="fab fa-css3-alt"></i>
+                      <h3>CSS</h3>
+                  </div>
+                  <div class="skill-card animate__animated animate__bounceIn" style="animation-delay: 0.4s;">
+                      <i class="fab fa-js-square"></i>
+                      <h3>JavaScript</h3>
+                  </div>
+                  <div class="skill-card animate__animated animate__bounceIn" style="animation-delay: 0.6s;">
+                      <i class="fab fa-react"></i>
+                      <h3>React</h3>
+                  </div>
+                  <div class="skill-card animate__animated animate__bounceIn" style="animation-delay: 0.8s;">
+                      <i class="fab fa-bootstrap"></i>
+                      <h3>Bootstrap</h3>
+                  </div>
+                  <div class="skill-card animate__animated animate__bounceIn" style="animation-delay: 0.8s;">
+                      <i class="fab fa-jQuery"></i>
+                      <h3>jQuery</h3>
+                  </div>
+                  <div class="skill-card animate__animated animate__bounceIn" style="animation-delay: 1s;">
+                      <i class="fab fa-python"></i>
+                      <h3>Python</h3>
+                  </div>
+                  <div class="skill-card animate__animated animate__bounceIn" style="animation-delay: 1s;">
+                      <i class="fab fa-java"></i>
+                      <h3>Java</h3>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="contact-form-handler.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
