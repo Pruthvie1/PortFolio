@@ -96,3 +96,20 @@ searchBar.addEventListener('keyup', (e) => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all anchor tags with class 'btn' inside projects section
+    var projectLinks = document.querySelectorAll("#projects .btn");
+
+    // Loop through each link and add an event listener
+    projectLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default click behavior
+
+            var url = link.getAttribute("data-url"); // Get the URL from data-url attribute
+
+            // Open the URL in a new tab
+            window.open(url, "_blank");
+        });
+    });
+});
+
